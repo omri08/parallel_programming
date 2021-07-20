@@ -1,9 +1,0 @@
-{
-  "recommendations": [
-    "esbenp.prettier-vscode",
-    "coenraads.bracket-pair-colorizer",
-    "streetsidesoftware.code-spell-checker",
-    "adamj.mpi-snippets",
-    "harry-ross-software.c-snippets"
-  ]
-}
