@@ -1,9 +1,12 @@
 build:
 	mpicc -c main.c 
-	mpicc -o exec main.o
+	mpicc -o exec main.o 
 
 clean:
-	rm *.o exec
+	rm -f *.o exec
 
-run2:
-	mpiexec -np 2 exec 
+run:
+	mpiexec -n 2 ./exec
+
+runOn2:
+	mpiexec -n 2 -machinefile mf --map-by node ./exec
