@@ -6,7 +6,7 @@ clean:
 	rm -f *.o exec
 
 run:
-	mpiexec -n 2 ./exec
+	mpiexec -n 4 ./exec
 
 runOn2:
-	mpiexec -n 2 -machinefile mf --map-by node ./exec
+	mpiexec -n 4 -machinefile mf --map-by node ./exec
